@@ -122,64 +122,70 @@
 
 
         <section class="reviews">
-            <div class="reviews__inner">
-                <div class="reviews__slider">
-                    <article class="reviews__slider-item">
-                        <header>
-                            <h3 class="reviews__slider-caption">Николай Петров</h3>
-                        </header>
-                        <section>
-                            <div class="reviews__slider-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</div>
-                        </section>
-                    </article>
-                    <div class="reviews__slider-pagination">
-                        <i class="reviews__slider-pagination-active"></i>
-                        <i></i>
-                        <i></i>
-                    </div>
+            <div class="reviews__inner container">
+
+
+                <input type="radio" name="reviews__slider-radio" id="reviews__slider-radio--01" checked style="display:none">
+                <input type="radio" name="reviews__slider-radio" id="reviews__slider-radio--02" style="display:none">
+                <input type="radio" name="reviews__slider-radio" id="reviews__slider-radio--03" style="display:none">
+
+
+                <article class="reviews__slider-item reviews__slider-item--01">
+                    <header class="reviews__header">
+                        <h3>Николай Петров</h3>
+                    </header>
+                    <section class="reviews__ext">
+                        <p><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q></p>
+                    </section>
+                </article>
+
+                <div class="reviews__slider-pagination">
+                    <label for="reviews__slider-radio--01" class="reviews__slider-pagination-item"></label>
+                    <label for="reviews__slider-radio--02" class="reviews__slider-pagination-item"></label>
+                    <label for="reviews__slider-radio--03" class="reviews__slider-pagination-item"></label>
                 </div>
             </div>
         </section>
 
 
 
-        <section class="price">
-            <div class="price-inner">
+        <section class="price ">
+            <div class="price-inner ">
 
-                <div class="price__table-wrap">
-                    <table class="price__table">
-                        <tr class="price__table-header">
-                            <td class="price__table-header-1"></td>
-                            <td class="price__table-header-2">
-                                <div class="price__table-header-name">База</div>
-                                <div class="price__table-header-value">1,99 USD</div>
+                <div class="price__table-wrap ">
+                    <table class="price__table ">
+                        <tr class="price__table-header ">
+                            <td class="price__table-header-1 "></td>
+                            <td class="price__table-header-2 ">
+                                <div class="price__table-header-name ">База</div>
+                                <div class="price__table-header-value ">1,99 USD</div>
                             </td>
-                            <td class="price__table-header-3">
-                                <div class="price__table-header-name">Стандарт</div>
-                                <div class="price__table-header-value">3,99 USD</div>
+                            <td class="price__table-header-3 ">
+                                <div class="price__table-header-name ">Стандарт</div>
+                                <div class="price__table-header-value ">3,99 USD</div>
                             </td>
-                            <td class="price__table-header-4">
-                                <div class="price__table-header-name">Анлим</div>
-                                <div class="price__table-header-value">9,99 USD</div>
+                            <td class="price__table-header-4 ">
+                                <div class="price__table-header-name ">Анлим</div>
+                                <div class="price__table-header-value ">9,99 USD</div>
                             </td>
                         </tr>
                         <tr>
-                            <td class="price__table-col-1">Розовый фильтр</td>
-                            <td class="price__table-col-2">Да</td>
-                            <td class="price__table-col-3">Да</td>
-                            <td class="price__table-col-4">Да</td>
+                            <td class="price__table-col-1 ">Розовый фильтр</td>
+                            <td class="price__table-col-2 ">Да</td>
+                            <td class="price__table-col-3 ">Да</td>
+                            <td class="price__table-col-4 ">Да</td>
                         </tr>
                         <tr>
-                            <td class="price__table-col-1">Смайлики</td>
-                            <td class="price__table-col-2">Нет</td>
-                            <td class="price__table-col-3">Нет</td>
-                            <td class="price__table-col-4">Да</td>
+                            <td class="price__table-col-1 ">Смайлики</td>
+                            <td class="price__table-col-2 ">Нет</td>
+                            <td class="price__table-col-3 ">Нет</td>
+                            <td class="price__table-col-4 ">Да</td>
                         </tr>
                         <tr>
-                            <td class="price__table-col-1">Комментарии</td>
-                            <td class="price__table-col-2">Нет</td>
-                            <td class="price__table-col-3">Нет</td>
-                            <td class="price__table-col-4">Нет</td>
+                            <td class="price__table-col-1 ">Комментарии</td>
+                            <td class="price__table-col-2 ">Нет</td>
+                            <td class="price__table-col-3 ">Нет</td>
+                            <td class="price__table-col-4 ">Нет</td>
                         </tr>
                     </table>
 
@@ -189,36 +195,36 @@
 
 
 
-        <article class="contacts">
-            <div class="contacts__inner">
+        <article class="contacts ">
+            <div class="contacts__inner ">
 
                 <header>
-                    <h3 class="contacts__caption">Остались вопросы?<br>Свяжитесь с нами!</h3>
+                    <h3 class="contacts__caption ">Остались вопросы?<br>Свяжитесь с нами!</h3>
                 </header>
 
-                <section class="contacts__item">
+                <section class="contacts__item ">
                     <header>
-                        <h3 class="contacts__item-caption">Звоните:</h3>
+                        <h3 class="contacts__item-caption ">Звоните:</h3>
                     </header>
-                    <section class="contacts__item-text">
+                    <section class="contacts__item-text ">
                         8 (800) 1000 900
                     </section>
                 </section>
 
-                <section class="contacts__item">
+                <section class="contacts__item ">
                     <header>
-                        <h3 class="contacts__item-caption">Пишите:</h3>
+                        <h3 class="contacts__item-caption ">Пишите:</h3>
                     </header>
-                    <section class="contacts__item-text">
+                    <section class="contacts__item-text ">
                         hello@pinkapp.ru
                     </section>
                 </section>
 
-                <section class="contacts__item">
+                <section class="contacts__item ">
                     <header>
-                        <h3 class="contacts__item-caption">Приезжайте в гости:</h3>
+                        <h3 class="contacts__item-caption ">Приезжайте в гости:</h3>
                     </header>
-                    <section class="contacts__item-text">
+                    <section class="contacts__item-text ">
                         Санкт-Петербург, Невский проспект, д. 20
                     </section>
                 </section>
@@ -227,27 +233,27 @@
         </article>
 
 
-        <div class="map">
+        <div class="map ">
         </div>
 
     </section>
 
 
-    <footer class="page-footer">
-        <div class="page-footer__logo-wrapper">
-            <div class="page-footer__logo">
-                <img src="img/logo.svg" alt="Pink">
+    <footer class="page-footer ">
+        <div class="page-footer__logo-wrapper ">
+            <div class="page-footer__logo ">
+                <img src="img/logo.svg " alt="Pink ">
             </div>
         </div>
-        <div class="page-footer__socials-wrapper">
-            <ul class="social-links">
-                <li class="social-links__item-tw">Twitter</li>
-                <li class="social-links__item-fb">Facebook</li>
-                <li class="social-links__item-yt">Youtube</li>
+        <div class="page-footer__socials-wrapper ">
+            <ul class="social-links ">
+                <li class="social-links__item-tw ">Twitter</li>
+                <li class="social-links__item-fb ">Facebook</li>
+                <li class="social-links__item-yt ">Youtube</li>
             </ul>
         </div>
-        <div class="page-footer__credentials-wrapper">
-            Website by <img alt="a"> for <img alt="htmlacademy">
+        <div class="page-footer__credentials-wrapper ">
+            Website by <img alt="a "> for <img alt="htmlacademy ">
         </div>
     </footer>
 
