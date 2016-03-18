@@ -1,0 +1,64 @@
+.page-header {
+    position: relative;
+    font-size: $font-size;
+    color: $color-font-white;
+    background-image: url("../../img/background-1@1x.jpg");
+    background-position: bottom center;
+    background-color: $color-blue-50;
+    min-height: 458px;
+    /**/
+    outline: 1px solid orange;
+}
+
+.page-header a {
+    color: $color-font-white;
+}
+
+.page-header__caption {
+    text-align: center;
+    font-family: $font-family;
+    font-weight: 300;
+    font-size: $font-size-h2;
+}
+
+.page-header__img {
+    background-image: url("../../img/iphone-hand-1.png");
+    background-repeat: no-repeat;
+    height: 286px;
+    /**/
+    outline: 1px solid red;
+}
+
+.page-header-top {
+    min-height: 66px;
+    line-height: 66px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.page-header__logo-wrap {
+    float: left;
+    width: 120px;
+    /**/
+    outline: 1px solid red;
+}
+
+.page-header__nav-wrap {
+    float: right;
+    width: 50px;
+    /**/
+    outline: 1px solid red;
+}
+
+.page-header-top--menu-close {}
+
+.page-header-top--menu-open {
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.main-nav__toggle--close {
+    opacity: 1;
+}
