@@ -1,3 +1,20 @@
-page-header {
+html {
+    font-size: $html-size-base;
+}
+
+body {
     font-size: $font-size;
+}
+
+.container {
+    width: 280px;
+    margin: 0 auto;
+    /**/
+    outline: 1px solid green;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

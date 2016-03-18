@@ -5,54 +5,96 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=320">
     <title>Pink</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
     <header class="page-header">
 
-        <div class="page-header__logo-wrap">
-            <a href="/" class="page-header__logo">
-                <img src="img/logo.svg" alt="Pink">
-            </a>
+
+        <div class="page-header-top page-header-top--menu-close">
+
+            <div class="container clearfix">
+
+                <div class="page-header__logo-wrap">
+                    <a href="#" class="page-header__logo">
+                        <img width="74" height="24" src="../img/Pink-logo-1.png" alt="Pink">
+                    </a>
+                </div>
+
+                <div class="page-header__nav-wrap">
+                    <a href="#" class="main-nav__toggle--close"> <img width="50" height="24" src="../img/pink-menu-burger.png" alt="menu">
+                    </a>
+                </div>
+
+
+            </div>
+
         </div>
 
-        <div class="page-header__nav-wrap">
-            <nav class="main-nav">
-                <ul class="main-nav__list">
-                    <li class="main-nav__active-item"><a href="#">Информация</a></li>
-                    <li><a href="#">Возможности</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Стоимость</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="main-nav__toggle main-nav__toggle-close"></a>
+        <div class="page-header-top page-header-top--menu-open clearfix">
+
+
+            <div class="page-header__logo-wrap">
+                <a href="#" class="page-header__logo">
+                    <img width="74" height="24" src="../img/Pink-logo-1.png" alt="Pink">
+                </a>
+            </div>
+
+            <div class="page-header__nav-wrap">
+                <nav class="main-nav">
+                    <ul class="main-nav__list">
+                        <li class="main-nav__active-item"><a href="#">Информация</a></li>
+                        <li><a href="#">Возможности</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Стоимость</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="main-nav__toggle--open"> <img width="50" height="24" src="../img/menu-cross.svg" alt="menu"></a>
+            </div>
+
+
         </div>
 
-        <section class="download-pink">
+
+        <div class="container clearfix">
+            <h2 class="page-header__caption">
+                Взгляните на жизнь иначе!
+            </h2>
+            <div class="page-header__img"></div>
+        </div>
+
+
+    </header>
+
+    <section class="download-pink">
+
+        <div class="container">
+
             <a class="download-pink__btn" href="#">Скачать приложение</a>
             <div class="download-pink__icons">
-                <a class="download-pink__icons-item" href="#">iPhone
+                <a class="download-pink__icons-item download-pink__icons-item--ipnone" href="#">iPhone
                 </a>
-                <a class="download-pink__icons-item" href="#">Android
+                <a class="download-pink__icons-item download-pink__icons-item--android" href="#">Android
                 </a>
-                <a class="download-pink__icons-item" href="#">Windows Phone
+                <a class="download-pink__icons-item download-pink__icons-item--win" href="#">Windows Phone
                 </a>
             </div>
             <div class="download-pink__text">
                 Доступно для iPhone, iPad, Android,
                 <br>Windows phone, Mac OS, Windows 8
             </div>
-        </section>
 
-    </header>
+        </div>
 
-
+    </section>
 
     <section class="page-content">
 
 
         <article class="features">
-            <div class="features__inner">
+            <div class="features__inner container">
                 <header class="features__header">
                     <h3 class="features__header-item">
                         Устали от серости мегаполиса?
@@ -63,15 +105,15 @@
                 </header>
                 <section class="features__content">
                     <section class="features__content-item">
-                        <h4>Поднимает настроение</h4>
+                        <h4 class="features__content-item-heading">Поднимает настроение</h4>
                         <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                     </section>
                     <section class="features__content-item">
-                        <h4>Меняет мир вокруг</h4>
+                        <h4 class="features__content-item-heading">Меняет мир вокруг</h4>
                         <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                     </section>
                     <section class="features__content-item">
-                        <h4>Заводит новых друзей</h4>
+                        <h4 class="features__content-item-heading">Заводит новых друзей</h4>
                         <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
                     </section>
                 </section>
