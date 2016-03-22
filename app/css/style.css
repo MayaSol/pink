@@ -1,0 +1,338 @@
+/*---background-color----*/
+/*--font---*/
+html {
+  font-size: 10px; }
+
+body {
+  font-size: 1.4rem; }
+
+.container {
+  width: 280px;
+  margin: 0 auto;
+  /**/
+  outline: 1px solid green; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.page-header {
+  position: relative;
+  font-size: 1.4rem;
+  color: #ffffff;
+  background-image: url("../../img/background-1@1x.jpg");
+  background-position: bottom center;
+  background-color: #1d2631;
+  min-height: 458px;
+  /**/
+  outline: 1px solid orange; }
+
+.page-header a {
+  color: #ffffff; }
+
+.page-header__caption {
+  text-align: center;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 2.4rem; }
+
+.page-header__img {
+  background-image: url("../../img/iphone-hand-1.png");
+  background-repeat: no-repeat;
+  height: 286px;
+  /**/
+  outline: 1px solid red; }
+
+.page-header-top {
+  min-height: 66px;
+  line-height: 66px;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.page-header__logo-wrap {
+  float: left;
+  width: 120px;
+  /**/
+  outline: 1px solid red; }
+
+.page-header__nav-wrap {
+  float: right;
+  width: 50px;
+  /**/
+  outline: 1px solid red; }
+
+.page-header-top--menu-open {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.main-nav__toggle--close {
+  opacity: 1; }
+
+.download-pink {
+  padding-top: 28px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #1d2631;
+  color: #ffffff; }
+
+.download-pink a {
+  color: #ffffff;
+  text-decoration: none; }
+
+.download-pink__btn {
+  display: block;
+  margin-bottom: 27px;
+  padding: 15px 35px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 27px; }
+
+.download-pink__icons {
+  margin-bottom: 25px;
+  font-size: 0;
+  /**/
+  outline: 2px solid yellow; }
+
+.download-pink__icons-item {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 37px; }
+
+.download-pink__icons-item:last-child {
+  margin-right: 0; }
+
+.download-pink__icons-item--ipnone {
+  width: 46px;
+  height: 57px;
+  background-image: url("../../img/icon-iphone.png"); }
+
+.download-pink__icons-item--android {
+  width: 42px;
+  height: 47px;
+  background-image: url("../../img/icon-android.png"); }
+
+.download-pink__icons-item--win {
+  width: 44px;
+  height: 42px;
+  background-image: url("../../img/icon-win.png"); }
+
+.download-pink__text {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #ffffff; }
+
+.features {
+  /**/
+  outline: 1px solid red; }
+
+.features__inner {
+  padding-top: 48px;
+  padding-bottom: 322px;
+  text-align: center;
+  background: url("../../img/screen-1-3.png") bottom center no-repeat; }
+
+.features__header {
+  background-color: #ffffff; }
+
+.features__header-item {
+  margin-bottom: 37px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  color: #283645; }
+
+.features__header-item:last {
+  margin-bottom: 0; }
+
+.features__content {
+  padding-top: 53px;
+  padding-bottom: 43px;
+  background-color: #f2f2f2; }
+
+.features__content-item {
+  margin-bottom: 32px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #283645; }
+
+.features__content-item-heading {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  font-weight: 700; }
+
+.reviews {
+  margin-bottom: 67px;
+  /**/
+  outline: 1px solid red; }
+
+.reviews__slider-item {
+  margin-top: 43px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: "Open Sans", Arial, sans-serif; }
+
+.reviews__slider-item h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 700;
+  color: #000000; }
+
+.reviews__slider-item p {
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  font-weight: 400;
+  color: #283645;
+  quotes: "\00ab" "\00bb";
+  /**/
+  outline: 1px solid orange; }
+
+.reviews__slider-item {
+  visibility: hidden;
+  min-height: 255px; }
+
+input[id="reviews__slider-radio--01"]:checked ~ .reviews__slider-item--01,
+input[id="reviews__slider-radio--02"]:checked ~ .reviews__slider-item--02,
+input[id="reviews__slider-radio--03"]:checked ~ .reviews__slider-item--03 {
+  visibility: visible; }
+
+.reviews__slider-pagination {
+  text-align: center;
+  font-size: 0;
+  line-height: 12px; }
+
+.reviews__slider-pagination-item {
+  display: inline-block;
+  vertical-align: middle;
+  height: 6px;
+  width: 6px;
+  margin-right: 13px;
+  border: 3px solid #ffffff;
+  background-color: #bec2c7;
+  border-radius: 50%; }
+
+.reviews__slider-pagination-item:last {
+  margin-right: 0; }
+
+input[id="reviews__slider-radio--01"]:checked ~ .reviews__slider-pagination label[for="reviews__slider-radio--01"],
+input[id="reviews__slider-radio--02"]:checked ~ .reviews__slider-pagination label[for="reviews__slider-radio--02"],
+input[id="reviews__slider-radio--03"]:checked ~ .reviews__slider-pagination label[for="reviews__slider-radio--03"] {
+  border-color: #283645;
+  background-color: #ffffff; }
+
+.price {
+  outline: 1px solid red;
+  background-color: #f2f2f2; }
+
+.price-inner {
+  position: relative;
+  min-height: 27.5rem;
+  padding-top: 67px;
+  padding-bottom: 105px; }
+
+.price__table {
+  position: absolute;
+  border-collapse: collapse; }
+
+.price__table-header-item {
+  padding-top: 2.1rem;
+  padding-bottom: 1.7rem;
+  min-width: 256px;
+  text-align: center;
+  text-transform: uppercase;
+  border-right: 2px solid #e5e5e5;
+  background-color: #283645;
+  color: #ffffff; }
+
+.price__table-header-name {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  font-weight: 700; }
+
+.price__table-header-value {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-weight: 300; }
+
+.price__table-header-item:last-child {
+  border-right: none; }
+
+.price__table-col-item {
+  padding-left: 20px;
+  height: 5.7rem;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #283645;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  border: 2px solid #e5e5e5;
+  border-top: none; }
+
+.price__table-col-item--yes {
+  background-image: url("../../img/icon-price-table-yes.png");
+  background-repeat: no-repeat;
+  background-position: bottom 1.8rem right 1.8rem; }
+
+.price__table-col-item--no {
+  background-image: url("../../img/icon-price-table-no.png");
+  background-repeat: no-repeat;
+  background-position: bottom 1.8rem right 1.8rem; }
+
+.price__table-col-1 {
+  display: none; }
+
+input[id="price__slider-radio--01"]:checked ~ .price__slider-pagination label[for="price__slider-radio--01"],
+input[id="price__slider-radio--02"]:checked ~ .price__slider-pagination .price__slider-pagination-item[for="price__slider-radio--02"],
+input[id="price__slider-radio--03"]:checked ~ .price__slider-pagination .price__slider-pagination-item[for="price__slider-radio--03"] {
+  background-color: #ffffff;
+  border-color: #283645; }
+
+input[id="price__slider-radio--01"]:checked ~ .price__table {
+  left: 10px; }
+
+input[id="price__slider-radio--02"]:checked ~ .price__table {
+  left: -250px; }
+
+input[id="price__slider-radio--03"]:checked ~ .price__table {
+  right: 10px; }
+
+.price__slider-pagination {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 0;
+  bottom: 47px; }
+
+.price__slider-pagination-item {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 13px;
+  background-color: #b5b9be;
+  border: 3px solid #f2f2f2;
+  border-radius: 50%; }
+
+.price__slider-pagination-item:last-child {
+  margin-right: 0; }

@@ -17,7 +17,7 @@
     font-size: 1.8rem;
     line-height: 3rem;
     font-weight: 700;
-    color: $color-font-black;
+    color: $color-black;
 }
 
 .reviews__slider-item p {
@@ -25,7 +25,7 @@
     font-size: $font-size;
     line-height: 3rem;
     font-weight: 400;
-    color: $color-font-grey-50;
+    color: $color-blue-70;
     quotes: "\00ab" "\00bb";
     /**/
     outline: 1px solid orange;
@@ -66,6 +66,6 @@ input[id="reviews__slider-radio--03"]:checked ~ .reviews__slider-item--03 {
 input[id="reviews__slider-radio--01"]:checked ~ .reviews__slider-pagination label[for="reviews__slider-radio--01"],
 input[id="reviews__slider-radio--02"]:checked ~ .reviews__slider-pagination label[for="reviews__slider-radio--02"],
 input[id="reviews__slider-radio--03"]:checked ~ .reviews__slider-pagination label[for="reviews__slider-radio--03"] {
-    border-color: $color-font-grey-50;
+    border-color: $color-blue-70;
     background-color: $color-white;
 }

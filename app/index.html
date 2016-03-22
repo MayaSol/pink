@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=320">
     <title>Pink</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,cyrillic,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=latin,cyrillic,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -94,25 +94,25 @@
 
 
         <article class="features">
-            <div class="features__inner container">
+            <div class="features__inner">
                 <header class="features__header">
-                    <h3 class="features__header-item">
+                    <h3 class="features__header-item container">
                         Устали от серости мегаполиса?
                     </h3>
-                    <h3 class="features__header-item">
+                    <h3 class="features__header-item container">
                         Нам есть, что вам предложить!
                     </h3>
                 </header>
                 <section class="features__content">
-                    <section class="features__content-item">
+                    <section class="features__content-item container">
                         <h4 class="features__content-item-heading">Поднимает настроение</h4>
                         <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
                     </section>
-                    <section class="features__content-item">
+                    <section class="features__content-item container">
                         <h4 class="features__content-item-heading">Меняет мир вокруг</h4>
                         <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
                     </section>
-                    <section class="features__content-item">
+                    <section class="features__content-item container">
                         <h4 class="features__content-item-heading">Заводит новых друзей</h4>
                         <p>Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
                     </section>
@@ -122,8 +122,8 @@
 
 
         <section class="reviews">
-            <div class="reviews__inner container">
 
+            <div class="reviews__inner container">
 
                 <input type="radio" name="reviews__slider-radio" id="reviews__slider-radio--01" checked style="display:none">
                 <input type="radio" name="reviews__slider-radio" id="reviews__slider-radio--02" style="display:none">
@@ -131,12 +131,8 @@
 
 
                 <article class="reviews__slider-item reviews__slider-item--01">
-                    <header class="reviews__header">
-                        <h3>Николай Петров</h3>
-                    </header>
-                    <section class="reviews__ext">
-                        <p><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q></p>
-                    </section>
+                    <h3>Николай Петров</h3>
+                    <p><q>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</q></p>
                 </article>
 
                 <div class="reviews__slider-pagination">
@@ -149,47 +145,55 @@
 
 
 
-        <section class="price ">
-            <div class="price-inner ">
+        <section class="price">
+            <div class="price-inner container">
 
-                <div class="price__table-wrap ">
-                    <table class="price__table ">
-                        <tr class="price__table-header ">
-                            <td class="price__table-header-1 "></td>
-                            <td class="price__table-header-2 ">
-                                <div class="price__table-header-name ">База</div>
-                                <div class="price__table-header-value ">1,99 USD</div>
-                            </td>
-                            <td class="price__table-header-3 ">
-                                <div class="price__table-header-name ">Стандарт</div>
-                                <div class="price__table-header-value ">3,99 USD</div>
-                            </td>
-                            <td class="price__table-header-4 ">
-                                <div class="price__table-header-name ">Анлим</div>
-                                <div class="price__table-header-value ">9,99 USD</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="price__table-col-1 ">Розовый фильтр</td>
-                            <td class="price__table-col-2 ">Да</td>
-                            <td class="price__table-col-3 ">Да</td>
-                            <td class="price__table-col-4 ">Да</td>
-                        </tr>
-                        <tr>
-                            <td class="price__table-col-1 ">Смайлики</td>
-                            <td class="price__table-col-2 ">Нет</td>
-                            <td class="price__table-col-3 ">Нет</td>
-                            <td class="price__table-col-4 ">Да</td>
-                        </tr>
-                        <tr>
-                            <td class="price__table-col-1 ">Комментарии</td>
-                            <td class="price__table-col-2 ">Нет</td>
-                            <td class="price__table-col-3 ">Нет</td>
-                            <td class="price__table-col-4 ">Нет</td>
-                        </tr>
-                    </table>
+                <input type="radio" name="price__slider-radio" id="price__slider-radio--01" style="display:none">
+                <input type="radio" name="price__slider-radio" id="price__slider-radio--02" checked style="display:none">
+                <input type="radio" name="price__slider-radio" id="price__slider-radio--03" style="display:none">
 
+                <table class="price__table">
+                    <tr class="price__table-header">
+                        <td class="price__table-col-1"></td>
+                        <td class="price__table-header-item price__table-col-2">
+                            <div class="price__table-header-name">База</div>
+                            <div class="price__table-header-value">1,99 USD</div>
+                        </td>
+                        <td class="price__table-header-item price__table-col-3">
+                            <div class="price__table-header-name">Стандарт</div>
+                            <div class="price__table-header-value">3,99 USD</div>
+                        </td>
+                        <td class="price__table-header-item price__table-col-4">
+                            <div class="price__table-header-name">Анлим</div>
+                            <div class="price__table-header-value">9,99 USD</div>
+                        </td>
+                    </tr>
+                    <tr class="price__table-row-01">
+                        <td class="price__table-col-item price__table-col-1 ">Розовый фильтр</td>
+                        <td class="price__table-col-item price__table-col-item--yes price__table-col-2 ">Розовый фильтр</td>
+                        <td class="price__table-col-item price__table-col-item--yes price__table-col-3 ">Розовый фильтр</td>
+                        <td class="price__table-col-item price__table-col-item--yes price__table-col-4 ">Розовый фильтр</td>
+                    </tr>
+                    <tr>
+                        <td class="price__table-col-item price__table-col-1 ">Смайлики</td>
+                        <td class="price__table-col-item price__table-col-item--no price__table-col-2 ">Смайлики</td>
+                        <td class="price__table-col-item price__table-col-item--yes price__table-col-3 ">Смайлики</td>
+                        <td class="price__table-col-item price__table-col-item--yes price__table-col-4 ">Смайлики</td>
+                    </tr>
+                    <tr>
+                        <td class="price__table-col-item price__table-col-1 ">Комментарии</td>
+                        <td class="price__table-col-item price__table-col-item--no price__table-col-2 ">Комментарии</td>
+                        <td class="price__table-col-item price__table-col-item--no price__table-col-3 ">Комментарии</td>
+                        <td class="price__table-col-item price__table-col-item--yes price__table-col-4 ">Комментарии</td>
+                    </tr>
+                </table>
+
+                <div class="price__slider-pagination">
+                    <label for="price__slider-radio--01" class="price__slider-pagination-item "></label>
+                    <label for="price__slider-radio--02" class="price__slider-pagination-item "></label>
+                    <label for="price__slider-radio--03" class="price__slider-pagination-item "></label>
                 </div>
+
             </div>
         </section>
 
