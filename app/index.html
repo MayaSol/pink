@@ -12,48 +12,56 @@
 <body>
     <header class="page-header">
 
+        <div class="page-header-top--closed">
+            <div class="page-header-top__logo-line--closed">
 
-        <div class="page-header-top page-header-top--menu-close">
+                <div class="container clearfix">
 
-            <div class="container clearfix">
+                    <div class="page-header__logo-wrap">
+                        <a href="#" class="page-header__logo">
+                            <img width="74" height="24" src="../img/Pink-logo-1.png" alt="Pink">
+                        </a>
+                    </div>
 
-                <div class="page-header__logo-wrap">
-                    <a href="#" class="page-header__logo">
-                        <img width="74" height="24" src="../img/Pink-logo-1.png" alt="Pink">
-                    </a>
+                    <div class="page-header__nav-wrap">
+                        <a href="#" class="main-nav__toggle--closed"> <img width="50" height="24" src="../img/pink-menu-burger.png" alt="menu">
+                        </a>
+                    </div>
+
                 </div>
-
-                <div class="page-header__nav-wrap">
-                    <a href="#" class="main-nav__toggle--close"> <img width="50" height="24" src="../img/pink-menu-burger.png" alt="menu">
-                    </a>
-                </div>
-
 
             </div>
 
         </div>
 
-        <div class="page-header-top page-header-top--menu-open clearfix">
+        <div class="page-header-top--opened">
 
+            <div class="page-header-top__logo-line--opened">
 
-            <div class="page-header__logo-wrap">
-                <a href="#" class="page-header__logo">
-                    <img width="74" height="24" src="../img/Pink-logo-1.png" alt="Pink">
-                </a>
+                <div class="container clearfix">
+
+                    <div class="page-header__logo-wrap">
+                        <a href="#" class="page-header__logo">
+                            <img width="74" height="24" src="../img/Pink-logo-1.png" alt="Pink">
+                        </a>
+                    </div>
+
+                    <div class="page-header__nav-wrap">
+                        <a href="#" class="main-nav__toggle--opened"> <img width="50" height="24" src="../img/menu-cross.svg" alt="menu"></a>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="page-header__nav-wrap">
-                <nav class="main-nav">
-                    <ul class="main-nav__list">
-                        <li class="main-nav__active-item"><a href="#">Информация</a></li>
-                        <li><a href="#">Возможности</a></li>
-                        <li><a href="#">Отзывы</a></li>
-                        <li><a href="#">Стоимость</a></li>
-                    </ul>
-                </nav>
-                <a href="#" class="main-nav__toggle--open"> <img width="50" height="24" src="../img/menu-cross.svg" alt="menu"></a>
-            </div>
-
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__list-item main-nav__list-item--active"><a href="#">Информация</a></li>
+                    <li class="main-nav__list-item"><a href="#">Возможности</a></li>
+                    <li class="main-nav__list-item"><a href="#">Отзывы</a></li>
+                    <li class="main-nav__list-item"><a href="#">Стоимость</a></li>
+                </ul>
+            </nav>
 
         </div>
 
@@ -96,12 +104,18 @@
         <article class="features">
             <div class="features__inner">
                 <header class="features__header">
-                    <h3 class="features__header-item container">
+                    <div class="container">
+                        <h3 class="features__header-item">
                         Устали от серости мегаполиса?
                     </h3>
-                    <h3 class="features__header-item container">
+                        <h3 class="features__header-item">
                         Нам есть, что вам предложить!
                     </h3>
+                    </div>
+                    <div class="container-viewport">
+                        <div class="features__header-border">
+                        </div>
+                    </div>
                 </header>
                 <section class="features__content">
                     <section class="features__content-item container">
@@ -169,29 +183,29 @@
                         </td>
                     </tr>
                     <tr class="price__table-row-01">
-                        <td class="price__table-col-item price__table-col-1 ">Розовый фильтр</td>
-                        <td class="price__table-col-item price__table-col-item--yes price__table-col-2 ">Розовый фильтр</td>
-                        <td class="price__table-col-item price__table-col-item--yes price__table-col-3 ">Розовый фильтр</td>
-                        <td class="price__table-col-item price__table-col-item--yes price__table-col-4 ">Розовый фильтр</td>
+                        <td class="price__table-col-item price__table-col-1">Розовый фильтр</td>
+                        <td class="price__table-col-item price__table-col-item--yes price__table-col-2">Розовый фильтр</td>
+                        <td class="price__table-col-item price__table-col-item--yes price__table-col-3">Розовый фильтр</td>
+                        <td class="price__table-col-item price__table-col-item--yes price__table-col-4">Розовый фильтр</td>
                     </tr>
                     <tr>
-                        <td class="price__table-col-item price__table-col-1 ">Смайлики</td>
-                        <td class="price__table-col-item price__table-col-item--no price__table-col-2 ">Смайлики</td>
-                        <td class="price__table-col-item price__table-col-item--yes price__table-col-3 ">Смайлики</td>
-                        <td class="price__table-col-item price__table-col-item--yes price__table-col-4 ">Смайлики</td>
+                        <td class="price__table-col-item price__table-col-1">Смайлики</td>
+                        <td class="price__table-col-item price__table-col-item--no price__table-col-2">Смайлики</td>
+                        <td class="price__table-col-item price__table-col-item--yes price__table-col-3">Смайлики</td>
+                        <td class="price__table-col-item price__table-col-item--yes price__table-col-4">Смайлики</td>
                     </tr>
                     <tr>
-                        <td class="price__table-col-item price__table-col-1 ">Комментарии</td>
-                        <td class="price__table-col-item price__table-col-item--no price__table-col-2 ">Комментарии</td>
-                        <td class="price__table-col-item price__table-col-item--no price__table-col-3 ">Комментарии</td>
-                        <td class="price__table-col-item price__table-col-item--yes price__table-col-4 ">Комментарии</td>
+                        <td class="price__table-col-item price__table-col-1">Комментарии</td>
+                        <td class="price__table-col-item price__table-col-item--no price__table-col-2">Комментарии</td>
+                        <td class="price__table-col-item price__table-col-item--no price__table-col-3">Комментарии</td>
+                        <td class="price__table-col-item price__table-col-item--yes price__table-col-4">Комментарии</td>
                     </tr>
                 </table>
 
                 <div class="price__slider-pagination">
-                    <label for="price__slider-radio--01" class="price__slider-pagination-item "></label>
-                    <label for="price__slider-radio--02" class="price__slider-pagination-item "></label>
-                    <label for="price__slider-radio--03" class="price__slider-pagination-item "></label>
+                    <label for="price__slider-radio--01" class="price__slider-pagination-item"></label>
+                    <label for="price__slider-radio--02" class="price__slider-pagination-item"></label>
+                    <label for="price__slider-radio--03" class="price__slider-pagination-item"></label>
                 </div>
 
             </div>
@@ -199,36 +213,36 @@
 
 
 
-        <article class="contacts ">
-            <div class="contacts__inner ">
+        <article class="contacts">
+            <div class="contacts__inner container">
 
-                <header>
-                    <h3 class="contacts__caption ">Остались вопросы?<br>Свяжитесь с нами!</h3>
+                <header class="contacts__header">
+                    <h3 class="contacts__caption">Остались вопросы?<br>Свяжитесь с нами!</h3>
                 </header>
 
-                <section class="contacts__item ">
+                <section class="contacts__item">
                     <header>
-                        <h3 class="contacts__item-caption ">Звоните:</h3>
+                        <h3 class="contacts__item-caption">Звоните:</h3>
                     </header>
-                    <section class="contacts__item-text ">
+                    <section class="contacts__item-text">
                         8 (800) 1000 900
                     </section>
                 </section>
 
-                <section class="contacts__item ">
+                <section class="contacts__item">
                     <header>
-                        <h3 class="contacts__item-caption ">Пишите:</h3>
+                        <h3 class="contacts__item-caption">Пишите:</h3>
                     </header>
-                    <section class="contacts__item-text ">
+                    <section class="contacts__item-text">
                         hello@pinkapp.ru
                     </section>
                 </section>
 
-                <section class="contacts__item ">
+                <section class="contacts__item">
                     <header>
-                        <h3 class="contacts__item-caption ">Приезжайте в гости:</h3>
+                        <h3 class="contacts__item-caption">Приезжайте в гости:</h3>
                     </header>
-                    <section class="contacts__item-text ">
+                    <section class="contacts__item-text">
                         Санкт-Петербург, Невский проспект, д. 20
                     </section>
                 </section>
@@ -237,30 +251,50 @@
         </article>
 
 
-        <div class="map ">
+        <div class="map container">
+            <div class="map-border">
+
+            </div>
         </div>
 
     </section>
 
 
-    <footer class="page-footer ">
-        <div class="page-footer__logo-wrapper ">
-            <div class="page-footer__logo ">
-                <img src="img/logo.svg " alt="Pink ">
+    <footer class="page-footer">
+        <div class="page-footer__logo-wrapper">
+            <div class="page-footer__logo">
+                <img src="img/logo.svg" alt="Pink">
             </div>
         </div>
-        <div class="page-footer__socials-wrapper ">
-            <ul class="social-links ">
-                <li class="social-links__item-tw ">Twitter</li>
-                <li class="social-links__item-fb ">Facebook</li>
-                <li class="social-links__item-yt ">Youtube</li>
+        <div class="page-footer__socials-wrapper">
+            <ul class="social-links">
+                <li class="social-links__item-tw">Twitter</li>
+                <li class="social-links__item-fb">Facebook</li>
+                <li class="social-links__item-yt">Youtube</li>
             </ul>
         </div>
-        <div class="page-footer__credentials-wrapper ">
-            Website by <img alt="a "> for <img alt="htmlacademy ">
+        <div class="page-footer__credentials-wrapper">
+            Website by <img alt="a"> for <img alt="htmlacademy">
         </div>
     </footer>
 
+    <script>
+        var link_main_nav_closed = document.querySelector(".main-nav__toggle--closed");
+        var link_main_nav_opened = document.querySelector(".main-nav__toggle--opened");
+        var main_nav = document.querySelector(".page-header-top--opened");
+
+
+        link_main_nav_closed.addEventListener("click", function (event) {
+            console.log("btn_open_clicked");
+            event.preventDefault();
+            main_nav.classList.add("page-header-top--menu-opened-display");
+        });
+
+        link_main_nav_opened.addEventListener("click", function (event) {
+            event.preventDefault();
+            main_nav.classList.remove("page-header-top--menu-opened-display");
+        });
+    </script>
 
 </body>
 

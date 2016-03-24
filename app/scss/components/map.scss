@@ -1,0 +1,16 @@
+.map {
+    height: 200px;
+    width: 320px;
+    background: url("../../img/map-1.jpg") no-repeat bottom;
+    /**/
+    outline: 1px solid orange;
+}
+
+.map-border {
+    width: 0;
+    height: 0;
+    border-top: 33px solid white;
+    border-left: 160px solid transparent;
+    border-right: 160px solid transparent;
+    border-bottom: 167px solid transparent;
+}
