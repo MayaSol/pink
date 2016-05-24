@@ -4,94 +4,283 @@
     font-size: $font-size;
     color: $color-white;
     background-image: url("../../img/background-1@1x.jpg");
-    background-position: bottom center;
+    background-position: top center;
     background-color: $color-blue-50;
     min-height: 458px;
     /**/
     outline: 1px solid orange;
+    a {
+        color: $color-white;
+    }
+    &__picture-wrapper {
+        min-height: 310px;
+        background-image: url("../../img/iphone-hand-1.png");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        /**/
+        outline: 1px solid orange;
+    }
+    &__caption {
+        margin: 0;
+        text-align: center;
+        font-weight: 300;
+        font-size: 2.4rem;
+        /**/
+        outline: 1px solid red;
+    }
+    &__logo-wrap {
+        float: left;
+        width: 120px;
+        /**/
+        outline: 1px solid red;
+    }
+    &__logo {
+        display: inline-block;
+        vertical-align: middle;
+        width: 74px;
+        height: 24px;
+        background: url("../../img/Pink-logo-1.png") no-repeat;
+    }
+    &-container {
+        width: 280px;
+        margin: 0 auto;
+    }
 }
 
-.page-header a {
-    color: $color-white;
+.page-header-top {
+    &__nav-wrap {
+        float: right;
+        /**/
+        outline: 1px solid red;
+    }
+    &__nav-link {
+        display: inline-block;
+        vertical-align: middle;
+        width: 50px;
+        height: 24px;
+    }
+    &--menu-opened-display {
+        display: block;
+    }
+    &--wide {
+        display: none;
+    }
 }
 
-.page-header__caption {
-    text-align: center;
-    font-weight: 300;
-    font-size: 2.4rem;
+.page-header-top--closed {
+    .page-header-top__logo-line {
+        height: 66px;
+        line-height: 66px;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    .page-header-top__nav-link {
+        background: url("../../img/pink-menu-burger.png") no-repeat;
+    }
+    .main-nav {
+        display: none;
+    }
 }
-
-.page-header__img {
-    background-image: url("../../img/iphone-hand-1.png");
-    background-repeat: no-repeat;
-    height: 286px;
-    /**/
-    outline: 1px solid red;
-}
-
-.page-header__logo-wrap {
-    float: left;
-    width: 120px;
-    /**/
-    outline: 1px solid red;
-}
-
-.page-header__nav-wrap {
-    float: right;
-    width: 50px;
-    /**/
-    outline: 1px solid red;
-}
-
-.page-header-top__logo-line--closed {
-    height: 66px;
-    line-height: 66px;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-.page-header-top__logo-line--opened {
-    height: 70px;
-    line-height: 69px;
-    box-shadow: inset 0 -1px 0 0 #000000;
-}
-
-.page-header-top--closed {}
 
 .page-header-top--opened {
-    position: absolute;
-    width: 100%;
-    display: none;
-    top: 0;
-    left: 0;
     background-color: $color-blue-70;
+    .page-header-top__logo-line {
+        height: 70px;
+        line-height: 69px;
+        box-shadow: inset 0 -1px 0 0 #000000;
+    }
+    .page-header-top__nav-link {
+        background: url("../../img/menu-cross.svg") no-repeat center center;
+    }
+    .main-nav {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        left: 0;
+        background-color: $color-blue-70;
+    }
 }
 
-.page-header-top--menu-opened-display {
-    display: block;
+.main-nav {
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    &__list-item {
+        text-align: center;
+        vertical-align: middle;
+        line-height: 64px;
+        box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 0 #000000;
+        a {
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+            color: $color-white;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
 }
 
-.main-nav__toggle--closed {
-    opacity: 1;
-}
-
-.main-nav__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.main-nav__list-item {
+.download-pink {
+    padding-top: 28px;
+    padding-bottom: 30px;
     text-align: center;
-    vertical-align: middle;
-    line-height: 64px;
-    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.15), inset 0 -1px 0 0 #000000;
+    background-color: $color-blue-50;
+    color: $color-white;
+    a {
+        color: $color-white;
+        text-decoration: none;
+    }
+    &__btn {
+        display: block;
+        margin-bottom: 27px;
+        padding: 15px 35px;
+        font-family: $font-family;
+        font-weight: 700;
+        font-size: $font-size-btn;
+        line-height: $font-size-btn;
+        color: $color-white;
+        border: 3px solid $color-white;
+        border-radius: 27px;
+    }
+    &__icons {
+        margin-bottom: 25px;
+        font-size: 0;
+        /**/
+        outline: 2px solid yellow;
+    }
+    &__icons-item {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 37px;
+    }
+    &__icons-item:last-child {
+        margin-right: 0;
+    }
+    &__icons-item--ipnone {
+        width: 46px;
+        height: 57px;
+        background-image: url("../../img/icon-iphone.png");
+    }
+    &__icons-item--android {
+        width: 42px;
+        height: 47px;
+        background-image: url("../../img/icon-android.png");
+    }
+    &__icons-item--win {
+        width: 44px;
+        height: 42px;
+        background-image: url("../../img/icon-win.png");
+    }
+    &__text {
+        font-family: $font-family;
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        color: $color-white;
+    }
+    /**/
+    outline:1px solid red;
 }
 
-.main-nav__list-item a {
-    font-size: 1.8rem;
-    line-height: 3.2rem;
-    color: $color-white;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
+@include media(">TabletWidth") {
+    .page-header {
+        background: url("../../../img/background-2@1x.jpg") top;
+        &__info-wrapper {
+            padding-top: 93px;
+            min-height: 525px;
+            /*width: 620px;
+            margin: 0 auto;*/
+            background: url("../../../img/iphone-hand-2@1x.png") no-repeat bottom center;
+            /**/
+            outline: 1px solid red;
+        }
+        &__picture-wrapper {
+            height: 0;
+            min-height: 0;
+        }
+        &__info {
+            float: left;
+            width: 320px;
+            /**/
+            outline: 2px dotted blue;
+        }
+        &__caption-wrapper {
+            background-image: none;
+            min-height: 0;
+        }
+        &__caption {
+            font-size: 4rem;
+            line-height: 4.8rem;
+            width: 220px;
+            margin: 0 auto;
+        }
+        &-container {
+            width: auto;
+            margin: 0;
+        }
+    }
+    .page-header-top {
+        &__logo-line--closed {
+            height: 110px;
+            line-height: 110px;
+        }
+    }
+    .download-pink {
+        background-color: transparent;
+        &__text {
+            font-size: 1.8rem;
+        }
+        &__btn {
+            min-width: 204px;
+        }
+    }
+}
+
+@include media(">ScreenWidth") {
+    .page-header-top {
+        &__nav-link {
+            display: none;
+        }
+        .main-nav {
+            /**/
+            outline: 2px dotted yellow;
+            display: block;
+            &__list {
+                line-height: 64px;
+            }
+            &__list-item {
+                display: inline-block;
+                line-height: 46px;
+                min-height: 46px;
+                text-align: right;
+                vertical-align: middle;
+                margin-left: 67px;
+                box-shadow: none;
+                border-bottom: 2px solid transparent;
+                a {
+                    font-size: 1.8rem;
+                    line-height: 3.2rem;
+                    color: $color-white;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                }
+                &:hover {
+                    border-bottom: 2px solid #ffffff;
+                }
+                &:active {
+                    opacity: 0.3;
+                    border-bottom: 2px solid transparent;
+                }
+            }
+        }
+    }
+    
+    .download-pink{
+        font-size: 2.1rem;
+        min-width: 224px;
+    }
 }

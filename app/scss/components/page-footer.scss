@@ -1,3 +1,78 @@
-.page-footer{
-    display:none;
+.page-footer {
+    display: none;
+}
+
+@include media(">TabletWidth") {
+    .page-footer {
+        display: block;
+        /**/
+        outline: 1px solid red;
+        &-layout-column {
+            float: left;
+            width: 32%;
+            margin-right: 2%;
+            font-size: 0;
+            line-height: 127px;
+            &:last-child {
+                float: right;
+                margin-right: 0;
+            }
+            /**/
+            outline:1px dotted black;
+        }
+        &__logo-wrapper {
+            display: inline-block;
+            width: 145px;
+            height: 40px;
+            vertical-align: middle;
+            text-align: left;
+            font-size: $font-size;
+            background-image: url("../../img/Pink-logo-footer-2@1x.png");
+        }
+        &__socials-wrapper {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100%;
+            text-align: center;
+            padding: 0;
+                line-height: 45px;
+            .social-links__item {
+                display: inline-block;
+                vertical-align: middle;
+                width: 45px;
+                height: 45px;
+                margin-right: 12px;
+                border:3px solid #e9ebec;
+                border-radius: 50%;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+            .social-links__item-img{
+                display: inline-block;
+                vertical-align: middle;
+                width: 26px;
+                height: 26px;
+            }
+        }
+        &__credentials-wrapper {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100%;
+            text-align: center;
+            font-family: $font-family;
+            font-size: $font-size;
+            line-height: 1.8rem;
+            color: $color-blue-70;
+            /**/
+            outline: 1px solid red;
+            a{
+                text-decoration: none;
+            }
+        }
+        &__credentials-img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
 }

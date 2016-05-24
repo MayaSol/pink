@@ -21,3 +21,55 @@ $color-red-210: #d22856;
 $font-family: "Open Sans",
 Arial,
 sans-serif;
+
+/**
+* Conditional Media Query Mixin
+* by @sheiko (http://dsheiko.com)
+* 
+* The problem this mixin solves is explained there 
+* http://css-tricks.com/conditional-media-query-mixins/
+*
+* https://github.com/dsheiko
+* MIT license: http://www.opensource.org/licenses/mit-license.php
+*/
+
+
+// Predefined Break-points
+$mediaMinWidth: 320px;
+$mediaTabletWidth: 700px;
+$mediaScreenWidth: 1200px;
+$mediaMaxWidth: 1440px;
+
+@function translate-media-condition($c) {
+  $condMap: (
+		"screen": "only screen",
+		"print": "only print",
+		"retina": "(-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-device-pixel-ratio: 1.5), (min-resolution: 120dpi)",
+     ">maxWidth": "(min-width: #{$mediaMaxWidth + 1})",
+		"<maxWidth": "(max-width: #{$mediaMaxWidth})", 		
+		">TabletWidth": "(min-width: #{$mediaTabletWidth + 1})",
+		"<TabletWidth": "(max-width: #{$mediaTabletWidth})",
+		">ScreenWidth": "(min-width: #{$mediaScreenWidth + 1})",
+		"<ScreenWidth": "(max-width: #{$mediaScreenWidth})",
+		">minWidth": "(min-width: #{$mediaMinWidth + 1})",
+		"<minWidth": "(max-width: #{$mediaMinWidth})"
+	);
+    
+//    @debug "translate-media-condition c = " + $c;
+
+    @return map-get( $condMap, $c );
+
+}
+
+// The media mixin
+@mixin media($args...) {
+  $query: "";
+  @each $arg in $args {
+    $op: "";
+    @if ( $query != "" ) {
+      $op: " and ";
+    }
+    $query: $query + $op + translate-media-condition($arg);
+  }
+  @media #{$query}  { @content; }
+}

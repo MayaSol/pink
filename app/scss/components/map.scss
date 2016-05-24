@@ -1,16 +1,40 @@
 .map {
     height: 200px;
-    width: 320px;
-    background: url("../../img/map-1.jpg") no-repeat bottom;
+    background: url("../../img/map-1.jpg") no-repeat bottom center;
+    &-border {
+        width: 0;
+        height: 0;
+        border-top: 33px solid white;
+        border-left: 160px solid transparent;
+        border-right: 160px solid transparent;
+        border-bottom: 167px solid transparent;
+    }
     /**/
     outline: 1px solid orange;
 }
 
-.map-border {
-    width: 0;
-    height: 0;
-    border-top: 33px solid white;
-    border-left: 160px solid transparent;
-    border-right: 160px solid transparent;
-    border-bottom: 167px solid transparent;
+@include media(">TabletWidth") {
+    .map {
+        height: 378px;
+        background: url("../../img/map-2.jpg") no-repeat bottom center;
+        &-border {
+        border-top: 33px solid white;
+        border-left: 310px solid transparent;
+        border-right: 310px solid transparent;
+        border-bottom: 815px solid transparent;
+        }
+    }
+}
+
+@include media(">ScreenWidth") {
+    .map {
+        height: 522px;
+        background: url("../../img/map-3.jpg") no-repeat bottom center;
+        &-border {
+        border-top: 124px solid white;
+        border-left: 470px solid transparent;
+        border-right: 470px solid transparent;
+        border-bottom: 398px solid transparent;
+        }
+    }
 }

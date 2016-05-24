@@ -1,45 +1,84 @@
 .contacts {
     font-family: $font-family;
     background-color: $color-white;
+    &__inner {
+        padding-top: 44px;
+    }
+    &__header {
+        margin-bottom: 37px;
+        text-align: center;
+    }
+    &__caption {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        font-weight: 300;
+        color: $color-blue-70;
+    }
+    &__item {
+        margin-bottom: 22px;
+        text-align: center;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__item-caption {
+        margin-top: 0;
+        margin-bottom: 4px;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        font-weight: 700;
+        color: $color-blue-70;
+    }
+    &__item-text {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        font-weight: 300;
+        color: $color-red-210;
+    }
 }
 
-.contacts__inner {
-    padding-top: 44px;
+@include media(">TabletWidth") {
+    .contacts {
+        &__caption {
+            font-size: 4.0rem;
+            line-height: 4.8rem;
+        }
+        &-items {
+            font-size: 0;
+            text-align: center;
+            outline: 2px dotted blue;
+        }
+        &__item {
+            display: inline-block;
+            width: 50%;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        &__item-phone {
+            float: left;
+            width: 50%;
+            outline: 1px solid yellow;
+        }
+        &__item-email {
+            float: right;
+            width: 50%;
+            outline: 1px solid orange;
+        }
+        &__item-address {
+            outline: 1px solid green;
+        }
+    }
 }
 
-.contacts__header {
-    margin-bottom: 37px;
-    text-align: center;
-}
-
-.contacts__caption {
-    font-size: 2.4rem;
-    line-height: 3rem;
-    font-weight: 300;
-    color: $color-blue-70;
-}
-
-.contacts__item {
-    margin-bottom: 22px;
-    text-align: center;
-}
-
-.contacts__item:last-child {
-    margin-bottom: 0;
-}
-
-.contacts__item-caption {
-    margin-top: 0;
-    margin-bottom: 4px;
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    font-weight: 700;
-    color: $color-blue-70;
-}
-
-.contacts__item-text {
-    font-size: 2.4rem;
-    line-height: 3rem;
-    font-weight: 300;
-    color: $color-red-210;
+@include media(">ScreenWidth") {
+    .contacts {
+        &__item {
+            display: inline-block;
+            width: 33%;
+            font-size: 1.8rem;
+            text-align: center;
+            /**/
+            outline: 1px solid red;
+        }
+    }
 }
